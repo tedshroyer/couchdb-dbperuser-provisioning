@@ -50,6 +50,7 @@ contents:
     namespace = com.example.myapp
     add_namespace_to_dbname = true
     db_name_format = ns_user
+    db_name_append_guid = false
     port = 8100
     
     [os_daemons]
@@ -84,6 +85,8 @@ namespace string.
 
 `db_name_format` (string) - Format for the database name if add_namespace_to_dbname is true.
 Options: ns_user = namespace then username, user_ns = username then namespace
+
+`db_name_append_guid` (boolean) - Append a guid to the db name if true
   
 ### References
 
